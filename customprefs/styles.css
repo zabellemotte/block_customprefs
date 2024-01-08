@@ -1,0 +1,37 @@
+.block_customprefs .customprefs_optionselectblock {
+display:inline;
+}
+
+.block_customprefs .customprefs_optionselectform {
+display:inline;
+}
+
+.block_customprefs .customprefs_optionselectopener,
+.block_customprefs .customprefs_courseselectopener
+{
+display:inline;
+margin-left:10px;
+border: 1px solid #8f959e;
+padding:6px 10px 6px 10px;
+border-radius:0.3rem;
+}
+
+.block_customprefs .customprefs_optionselectblock,
+.block_customprefs .customprefs_courseselectblock {
+display:none;
+margin-top:20px;
+}
+
+.block_customprefs .customprefs_courseselectform {
+display:inline;
+}
+
+.block_customprefs .customprefs_optionselectform label,
+.block_customprefs .customprefs_courseselectform label {
+margin:0px 18px 0px 2px; 
+}
+
+.block_customprefs .expanded-icon .fa-chevron-down::before {
+font-size:70%;
+vertical-align:middle;
+}
