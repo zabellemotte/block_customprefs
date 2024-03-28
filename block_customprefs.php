@@ -48,6 +48,12 @@ class block_customprefs extends block_base {
         return false;
     }
 
+ function get_required_javascript() {
+       //script to display block with form course selection 
+        $this->page->requires->js_call_amd('block_customprefs/optionselection','init');
+ }
+
+
 function get_content() {
        global $USER;
        // get list of possible options
@@ -140,8 +146,7 @@ function get_content() {
 
        $this->content->text .= html_writer::end_tag('form');
         $this->content->text .= html_writer::end_tag('div');
-       //script to display block with form course selection 
-        $this->page->requires->js_call_amd('block_customprefs/optionselection','init');
+
 
        // result of the different selections
        $this->content->text.="<hr><div class='customprefs_option'> ".get_string('ocitext','block_customprefs').$options[$currentchoice]."</div>";
