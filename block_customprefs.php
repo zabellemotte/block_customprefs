@@ -94,7 +94,8 @@ function get_content() {
        }
        else
        $currentcourses=$allcourses;
-       
+
+       $this->content = new stdClass;
        $this->content->text="";
        // button to open option selection form
        $this->content->text .=html_writer::start_tag('div', array('class'=>'customprefs_optionselectopener','id'=>'customprefs_optionselectopener'));
